@@ -1,0 +1,1 @@
+export const VIEW_DATA_SUCCESS = 'view_data_success'
