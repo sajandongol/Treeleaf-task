@@ -76,9 +76,15 @@ class ListTable extends Component {
                         }
                     </tbody>
                 </Table>
-                <Link to='/profiles'>
-                    <Button variant="warning" style={{ marginLeft: "570px" }}>View Profiles</Button>
-                </Link>
+
+                {
+                    this.props.list[0] ? (<Link to='/profiles'>
+                        <Button variant="warning" style={{ marginLeft: "570px" }}>View Profiles</Button>
+                    </Link>) : (<Link to='/profiles'>
+                        <Button disabled variant="warning" style={{ marginLeft: "570px" }}>View Profiles</Button>
+                    </Link>)
+                }
+
             </div>
         )
     }
