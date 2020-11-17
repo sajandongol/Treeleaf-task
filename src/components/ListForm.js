@@ -99,7 +99,7 @@ class ListForm extends Component {
         // let d = JSON.parse(getLocalStorageItem('data'))
 
         return (
-            <div>
+            <div responsive>
                 <h3 style={{ marginLeft: "500px" }}>React Redux Task</h3>
                 <Card>
                     <Form onSubmit={this.handleSubmit} style={{ margin: "20px" }}>
@@ -124,7 +124,7 @@ class ListForm extends Component {
                                 </Col>
                                 <Col>
                                     <Form.Label>Date Of Birth</Form.Label>
-                                    <Form.Control name="dateOfBirth" value={this.state.dateOfBirth} placeholder="Enter Date Of Birth" onChange={this.handleInputChange} />
+                                    <Form.Control type="date" name="dateOfBirth" value={this.state.dateOfBirth} placeholder="Enter Date Of Birth" onChange={this.handleInputChange} />
                                 </Col>
                             </Row>
                         </Form.Group>
