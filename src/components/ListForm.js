@@ -99,8 +99,8 @@ class ListForm extends Component {
         // let d = JSON.parse(getLocalStorageItem('data'))
 
         return (
-            <div responsive>
-                <h3 style={{ marginLeft: "500px" }}>React Redux Task</h3>
+            <div >
+                <h3 style={{ textAlign: "center" }}>React Redux Task</h3>
                 <Card>
                     <Form onSubmit={this.handleSubmit} style={{ margin: "20px" }}>
                         <Form.Group>

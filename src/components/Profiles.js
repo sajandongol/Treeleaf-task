@@ -15,7 +15,7 @@ class Profiles extends Component {
     render() {
         return (
             <Container>
-                <h2 style={{ marginLeft: "450px", marginTop: "30px", marginBottom: "30px" }}>Profiles List</h2>
+                <h2 style={{ textAlign: "center", marginTop: "30px", marginBottom: "30px" }}>Profiles List</h2>
                 {this.props.list.map((item, index) => {
                     return (
                         <div key={index}>
@@ -46,7 +46,9 @@ class Profiles extends Component {
                 })
                 }
                 <Link to="/">
-                    <Button style={{ marginLeft: "500px", marginBottom: "15px" }} variant="secondary">Go Back</Button>
+                    <div style={{ textAlign: "center" }}>
+                        <Button style={{ marginBottom: "15px" }} variant="secondary">Go Back</Button>
+                    </div>
                 </Link>
             </Container >
         )

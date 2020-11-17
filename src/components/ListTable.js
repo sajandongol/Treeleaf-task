@@ -36,8 +36,8 @@ class ListTable extends Component {
         return (
             <div style={{ margin: 30 }}>
                 <ListForm />
-                <h3 style={{ marginLeft: "600px" }}>Table</h3>
-                <Table striped bordered hover responsive="sm">
+                <h3 style={{ textAlign: "center" }}>Table</h3>
+                <Table striped bordered hover responsive>
                     <thead>
                         <tr>
                             <th>S.N</th>
@@ -78,10 +78,16 @@ class ListTable extends Component {
                 </Table>
 
                 {
-                    this.props.list[0] ? (<Link to='/profiles'>
-                        <Button variant="warning" style={{ marginLeft: "570px" }}>View Profiles</Button>
-                    </Link>) : (<Link to='/profiles'>
-                        <Button disabled variant="warning" style={{ marginLeft: "570px" }}>View Profiles</Button>
+                    this.props.list[0] ? (
+                        <Link to='/profiles'>
+                            <div style={{ textAlign: "center" }}>
+                                <Button variant="warning" >View Profiles</Button>
+                            </div>
+                        </Link>
+                    ) : (<Link to='/profiles'>
+                        <div style={{ textAlign: "center" }}>
+                            <Button disabled variant="warning" style={{ textAlign: "center" }}>View Profiles</Button>
+                        </div>
                     </Link>)
                 }
 

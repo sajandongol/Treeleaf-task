@@ -16,7 +16,7 @@ class ViewProfile extends Component {
 
         return (
             <div>
-                <h2 style={{ marginTop: "15px", marginLeft: "550px", marginBottom: "30px" }}>Profile View Page</h2>
+                <h2 style={{ marginTop: "15px", textAlign: "center", marginBottom: "30px" }}>Profile View Page</h2>
 
                 <Card style={{ marginLeft: "280px", width: '50rem' }}>
                     <div className='d-flex' style={{ width: "100%", border: "5px", marginTop: "25px", marginBottom: "18px" }}>
@@ -24,60 +24,60 @@ class ViewProfile extends Component {
                             <h1 style={{ textAlign: 'center', lineHeight: "3.7" }}>{userDetail[0].name.charAt(0)}</h1>
                         </div>
                     </div>
-                    <Card.Body style={{ marginLeft: "50px" }}>
-                        <div className="container">
-                            <div className="row">
-                                <div className="col">
+                    <Card.Body style={{ margin: "50px" }}>
+                        <Container>
+                            <Row>
+                                <Col>
                                     <Card.Title>Name: {userDetail[0].name} </Card.Title>
-                                </div>
-                                <div className="col">
+                                </Col>
+                                <Col >
                                     <Card.Title>Email: {userDetail[0].email} </Card.Title>
-                                </div>
-                            </div>
+                                </Col>
+                            </Row>
 
-                            <div className="row">
-                                <div className="col">
+                            <Row>
+                                <Col>
                                     <Card.Title>Phone Number: {userDetail[0].phoneNumber} </Card.Title>
-                                </div>
-                                <div className="col">
+                                </Col>
+                                <Col>
                                     <Card.Title>Data Of Birth: {userDetail[0].dateOfBirth} </Card.Title>
-                                </div>
-                            </div>
+                                </Col>
+                            </Row>
 
-                            <div className="row">
-                                <div className="col">
+                            <Row>
+                                <Col>
                                     <Card.Title>City: {userDetail[0].city} </Card.Title>
-                                </div>
-                                <div className="col">
+                                </Col>
+                                <Col>
                                     <Card.Title>District: {userDetail[0].district} </Card.Title>
-                                </div>
-                            </div>
+                                </Col>
+                            </Row>
 
-                            <div className="row">
-                                <div className="col">
+                            <Row>
+                                <Col>
                                     <Card.Title>Province: {userDetail[0].province} </Card.Title>
-                                </div>
-                                <div className="col">
+                                </Col>
+                                <Col>
                                     <Card.Title>Country: {userDetail[0].country} </Card.Title>
-                                </div>
-                            </div>
+                                </Col>
+                            </Row>
 
-                            <div className="row">
-                                <div className="col">
+                            <Row>
+                                <Col>
                                     <Link to='/profiles'>
                                         <Button variant="secondary">Go Back</Button>
                                     </Link>{'  '}
                                     <Link to='/'>
                                         <Button onClick={() => this.handleEdit(this.props.indexData)} variant="primary">Edit</Button>
                                     </Link>{'  '}
-                                </div>
-                                <div className="col">
+                                </Col>
+                                <Col>
                                     <Link to='/'>
                                         <Button variant="success">Go to Home</Button>
                                     </Link>{'  '}
-                                </div>
-                            </div>
-                        </div>
+                                </Col>
+                            </Row>
+                        </Container>
                     </Card.Body>
                 </Card>
             </div>
